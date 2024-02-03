@@ -34,13 +34,25 @@ class HandbookCollectionViewCell: UICollectionViewCell {
         
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint = CGPoint(x: 1, y: 1)
-        gradient.frame = overlay.accessibilityFrame
+        gradient.frame = overlay.frame
         gradient.cornerCurve = .continuous
         gradient.cornerRadius = 30
         
         overlay.layer.insertSublayer(gradient, at: 0)
         overlay.layer.cornerRadius = 30
         overlay.layer.cornerCurve = .continuous
+        
+        titleLabel.adjustsFontForContentSizeCategory = true
+        titleLabel.maximumContentSizeCategory = .extraExtraLarge
+        titleLabel.font = UIFont.preferredFont(for: .headline, weight: .semibold)
+        
+        subtitleLabel.adjustsFontForContentSizeCategory = true
+        subtitleLabel.maximumContentSizeCategory = .extraLarge
+        subtitleLabel.font = UIFont.preferredFont(for: .caption2, weight: .regular)
+        
+        descriptionLabel.adjustsFontForContentSizeCategory = true
+        descriptionLabel.maximumContentSizeCategory = .extraLarge
+        descriptionLabel.font = UIFont.preferredFont(for: .caption2, weight: .regular)
         
     }
     
