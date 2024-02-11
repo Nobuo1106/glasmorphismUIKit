@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73D90732B759AD100A21CB7 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D90722B759AD100A21CB7 /* SectionTableViewCell.swift */; };
 		C75CA4262B6DCE6C00E7E287 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4252B6DCE6C00E7E287 /* CoursesTableViewCell.swift */; };
 		C75CA4282B6E312500E7E287 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4272B6E312400E7E287 /* CoursesViewController.swift */; };
 		C75CA42B2B6E454300E7E287 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CA42A2B6E454300E7E287 /* Section.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C73D90722B759AD100A21CB7 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
 		C75CA4252B6DCE6C00E7E287 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		C75CA4272B6E312400E7E287 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		C75CA42A2B6E454300E7E287 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				C7B0264F2B6623DF007545B1 /* HandbookCollectionViewCell.swift */,
 				C75CA4252B6DCE6C00E7E287 /* CoursesTableViewCell.swift */,
+				C73D90722B759AD100A21CB7 /* SectionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				C77550952B6933540091A064 /* Course.swift in Sources */,
 				C7B026502B6623DF007545B1 /* HandbookCollectionViewCell.swift in Sources */,
 				C75CA4282B6E312500E7E287 /* CoursesViewController.swift in Sources */,
+				C73D90732B759AD100A21CB7 /* SectionTableViewCell.swift in Sources */,
 				C7886FB12B5F2A6100AAB08C /* FeaturedViewController.swift in Sources */,
 				C78C2A312B648CDD00BEE17A /* CustomUIView.swift in Sources */,
 				C78C2A322B648CDD00BEE17A /* Font.swift in Sources */,

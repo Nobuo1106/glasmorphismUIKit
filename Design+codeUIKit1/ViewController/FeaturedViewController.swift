@@ -23,6 +23,7 @@ class FeaturedViewController: UIViewController {
         super.viewDidLoad()
         handbooksCollectionView.delegate = self
         handbooksCollectionView.dataSource = self
+        handbooksCollectionView.layer.masksToBounds = false
         coursesTableView.delegate = self
         coursesTableView.dataSource = self
         coursesTableView.layer.masksToBounds = false
@@ -109,6 +110,7 @@ extension FeaturedViewController: UITableViewDataSource {
         let selectedCourse = courses[indexPath.section]
         coursesViewController.course = selectedCourse
         coursesViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        coursesViewController.modalPresentationStyle = .fullScreen
         present(coursesViewController, animated: true)
     }
 }

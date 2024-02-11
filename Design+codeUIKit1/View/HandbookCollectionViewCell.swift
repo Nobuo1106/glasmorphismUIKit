@@ -53,7 +53,6 @@ class HandbookCollectionViewCell: UICollectionViewCell {
         descriptionLabel.adjustsFontForContentSizeCategory = true
         descriptionLabel.maximumContentSizeCategory = .extraLarge
         descriptionLabel.font = UIFont.preferredFont(for: .caption2, weight: .regular)
-        
     }
     
     override public func prepareForReuse() {
