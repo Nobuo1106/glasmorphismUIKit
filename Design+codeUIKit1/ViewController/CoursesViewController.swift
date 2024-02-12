@@ -17,10 +17,11 @@ class CoursesViewController: UIViewController {
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-//    @IBOutlet weak var iconImageView: CustomImageView!
+    @IBOutlet weak var iconImageView: CustomImageView!
     @IBOutlet weak var sectionsTableView: UITableView!
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var menuButton: UIButton!
     private var tokens: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
@@ -34,13 +35,33 @@ class CoursesViewController: UIViewController {
             }
             .store(in: &tokens)
         
-//        iconImageView.image = course?.courseIcon
+        iconImageView.image = course?.courseIcon
         bannerImage.image = course?.courseBanner
         backgroundImage.image = course?.courseBackground
         titleLabel.text = course?.courseTitle
         subtitleLabel.text = course?.courseSubtitle
         descriptionLabel.text = course?.courseDescription
         authorLabel.text = "Taught by \(course?.courseAuthor?.formatted(.list(type: .and, width: .standard)) ?? "Design+Code")"
+        let menu = UIMenu(
+            title: "Course Options",
+            options: .displayInline,
+            children: [
+                UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up"), handler: { _ in
+                    
+                }),
+                UIAction(title: "Take Test", image: UIImage(systemName: "highlighter"), handler: { _ in
+                    
+                }),
+                UIAction(title: "Download", image: UIImage(systemName: "square.and.arrow.down"), handler: { _ in
+                    
+                }),
+                UIAction(title: "Forums", image: UIImage(systemName: "chevron.left.forwardslash.chevron.right"), handler: { _ in
+                    
+                })
+            ]
+        )
+        menuButton.showsMenuAsPrimaryAction = true
+        menuButton.menu = menu
     }
     @IBAction func closeButtonDidTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
